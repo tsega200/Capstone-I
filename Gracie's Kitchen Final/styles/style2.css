@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap")
+body
+{
+  font-family: "Poppins", sans-serif;
+
+}
+.trad
+{
+  width: 1200px;
+  margin: 80px auto;
+
+}
+.title
+{
+  text-align: center;
+  margin-bottom: 60px;
+}
+.title h1
+{
+  text-transform: capitalize;
+  font-size: 36px;
+  position:relative;
+  display: inline-block;
+}
+.title h1 span
+{
+  display: block;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.title h1::before
+{
+  position: absolute;
+  content:"";
+  width: 100px;
+  height: 2px;
+  background-color: #ff4500;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.menu
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.single
+{
+  flex-basis: 580px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+}
+.single:nth-child(5), .single-menu:nth-child(6)
+{
+  border-bottom: 0;
+}
+.single
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.single:hover img
+{
+  border-radius: 0;
+}
+.single img
+{
+  max-width: 100px;
+  margin-right: 30px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  padding: 3px;
+  transition: .5s;
+}
+.single h1
+{
+  text-transform: capitalize;
+  font-size: 22px;
+  border-bottom: 1px dashed #333;
+  margin-bottom: 5px;
+  padding-bottom: : 5px;
+}
+.single h1 span
+{
+  float: right;
+  color: #ff4500;
+  font-style: italic;
+}
